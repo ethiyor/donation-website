@@ -1,0 +1,27 @@
+.progress-container {
+  width: 100%;
+  margin: 16px 0;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.progress-current {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.progress-goal {
+  color: var(--text-secondary);
+}
+
+.progress-percentage {
+  font-weight: 600;
+  color: var(--success-color);
+}
