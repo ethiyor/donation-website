@@ -67,7 +67,6 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} DonateNow. All rights reserved.</p>
-          <p> Developed by <a href="https://www.linkedin.com/in/yordanos-kassa-624302295/">Yordanos</a></p>
         </div>
       </div>
     </footer>
