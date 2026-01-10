@@ -13,7 +13,7 @@ const handleWebhook = async (req, res) => {
   try {
     event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
   } catch (err) {
-    console.error('⚠️  Webhook signature verification failed:', err.message);
+    console.error('Webhook signature verification failed:', err.message);
     return res.status(400).send(`Webhook Error: ${err.message}`);
   }
 
@@ -21,7 +21,7 @@ const handleWebhook = async (req, res) => {
   switch (event.type) {
     case 'checkout.session.completed': {
       const session = event.data.object;
-      console.log('💰 Payment successful:', session.id);
+      console.log('Payment successful:', session.id);
       
       try {
         // Update donation status
@@ -36,7 +36,7 @@ const handleWebhook = async (req, res) => {
         
         if (result.rows.length > 0) {
           const donation = result.rows[0];
-          console.log('✅ Donation updated:', donation.id);
+          console.log('Donation updated:', donation.id);
           
           // Send confirmation email
           await sendDonationEmail(donation);
@@ -49,7 +49,7 @@ const handleWebhook = async (req, res) => {
     
     case 'checkout.session.expired': {
       const session = event.data.object;
-      console.log('⏰ Session expired:', session.id);
+      console.log('Session expired:', session.id);
       
       await query(
         `UPDATE donors 
@@ -62,7 +62,7 @@ const handleWebhook = async (req, res) => {
     
     case 'payment_intent.payment_failed': {
       const paymentIntent = event.data.object;
-      console.log('❌ Payment failed:', paymentIntent.id);
+      console.log('Payment failed:', paymentIntent.id);
       
       await query(
         `UPDATE donors 

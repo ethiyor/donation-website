@@ -1,4 +1,4 @@
-# 💙 Modern Donation Website
+# Modern Donation Website
 
 A full-stack donation platform built with React, Express, PostgreSQL, and Stripe. Support charitable causes with secure online donations, campaign tracking, and real-time progress updates.
 
@@ -7,9 +7,9 @@ A full-stack donation platform built with React, Express, PostgreSQL, and Stripe
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue)
 
-## ✨ Features
+## Features
 
-### 🎯 Core Features
+### Core Features
 - **Secure Payment Processing** - Stripe integration for safe, encrypted transactions
 - **Campaign Management** - Create and manage fundraising campaigns
 - **Real-time Progress** - Live donation tracking with progress bars
@@ -19,21 +19,21 @@ A full-stack donation platform built with React, Express, PostgreSQL, and Stripe
 - **Leaderboard** - Recognize top donors
 - **Multi-category Support** - Filter campaigns by category
 
-### 🔒 Security
+### Security
 - HTTPS/SSL encryption
 - Stripe webhook verification
 - Input validation & sanitization
 - Secure authentication with JWT
 - Password hashing with bcrypt
 
-### 📱 User Experience
+### User Experience
 - Responsive design (mobile & desktop)
 - Modern gradient UI
 - Smooth animations
 - Toast notifications
 - Loading states
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** - UI framework
@@ -152,7 +152,7 @@ The app will be available at:
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:5000
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Vercel/Netlify)
 
@@ -200,7 +200,7 @@ cd backend && npm start
 3. Select events: `checkout.session.completed`, `checkout.session.expired`
 4. Copy webhook secret to `STRIPE_WEBHOOK_SECRET`
 
-## 📚 API Documentation
+## API Documentation
 
 ### Campaigns
 
@@ -235,7 +235,7 @@ POST   /api/auth/register       - Register new user
 POST   /api/auth/login          - Login user
 ```
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 donation-website/
@@ -277,7 +277,7 @@ Use Stripe test cards:
 
 Use a service like Ethereal Email or Mailtrap for development
 
-## 🔧 Common Issues
+## Common Issues
 
 ### Database Connection Error
 - Verify PostgreSQL is running
@@ -294,7 +294,7 @@ Use a service like Ethereal Email or Mailtrap for development
 - For Gmail, use App Password
 - Verify EMAIL_HOST and EMAIL_PORT
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - [ ] Recurring donations (subscriptions)
 - [ ] Social media authentication
@@ -307,7 +307,7 @@ Use a service like Ethereal Email or Mailtrap for development
 - [ ] Campaign comments/updates
 - [ ] Integration with payment processors (PayPal, etc.)
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
@@ -315,7 +315,7 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 Contributions welcome! Please open an issue or submit a pull request.
 
-## 💬 Support
+## Support
 
 For questions or issues:
 - Email: support@donatenow.com
@@ -323,4 +323,4 @@ For questions or issues:
 
 ---
 
-**Built with ❤️ for a better world**
+**Built for a better world**

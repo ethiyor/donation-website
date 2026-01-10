@@ -18,7 +18,7 @@ const sendDonationEmail = async (donation) => {
     const mailOptions = {
       from: process.env.EMAIL_FROM,
       to: donation.email,
-      subject: '🙏 Thank You for Your Donation!',
+      subject: 'Thank You for Your Donation!',
       html: `
         <!DOCTYPE html>
         <html>
@@ -37,7 +37,7 @@ const sendDonationEmail = async (donation) => {
         <body>
           <div class="container">
             <div class="header">
-              <h1>Thank You! 💙</h1>
+              <h1>Thank You!</h1>
               <p>Your generosity makes a difference</p>
             </div>
             <div class="content">
@@ -69,7 +69,7 @@ const sendDonationEmail = async (donation) => {
     };
 
     const info = await transporter.sendMail(mailOptions);
-    console.log('✉️  Email sent:', info.messageId);
+    console.log('Email sent:', info.messageId);
     return info;
   } catch (error) {
     console.error('Error sending email:', error);

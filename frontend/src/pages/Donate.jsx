@@ -214,7 +214,7 @@ function Donate() {
               </button>
 
               <p className="secure-notice">
-                🔒 Secure payment powered by Stripe. Your information is safe and encrypted.
+                Secure payment powered by Stripe. Your information is safe and encrypted.
               </p>
             </form>
           </div>
@@ -223,10 +223,10 @@ function Donate() {
             <div className="info-box card">
               <h3>Why Donate?</h3>
               <ul>
-                <li>✓ 100% of your donation goes to the cause</li>
-                <li>✓ Tax-deductible receipt provided</li>
-                <li>✓ Secure and encrypted transactions</li>
-                <li>✓ Make a real, measurable impact</li>
+                <li>100% of your donation goes to the cause</li>
+                <li>Tax-deductible receipt provided</li>
+                <li>Secure and encrypted transactions</li>
+                <li>Make a real, measurable impact</li>
               </ul>
             </div>
 

@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-## 🚀 Get Started in 5 Minutes
+## Get Started in 5 Minutes
 
 ### Step 1: Install Dependencies
 ```bash
@@ -33,16 +33,16 @@ Copy `.env.example` files and fill in your credentials:
 npm run dev
 ```
 
-Visit http://localhost:5173 🎉
+Visit http://localhost:5173
 
-## 📝 Get Stripe Test Keys
+## Get Stripe Test Keys
 
 1. Go to https://dashboard.stripe.com/test/apikeys
 2. Copy **Publishable key** → `frontend/.env`
 3. Copy **Secret key** → `backend/.env`
 4. For webhooks: https://dashboard.stripe.com/test/webhooks
 
-## ✉️ Email Setup (Gmail)
+## Email Setup (Gmail)
 
 1. Enable 2-Factor Authentication
 2. Generate App Password: https://myaccount.google.com/apppasswords
@@ -52,7 +52,7 @@ Visit http://localhost:5173 🎉
    EMAIL_PASSWORD=your-16-char-app-password
    ```
 
-## 🎨 Customization
+## Customization
 
 ### Change Colors
 Edit `frontend/src/index.css`:
@@ -70,7 +70,7 @@ INSERT INTO campaigns (title, description, goal_amount, category, image_url)
 VALUES ('Your Campaign', 'Description', 10000, 'Education', 'image-url');
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Port already in use?**
 ```bash
@@ -93,7 +93,7 @@ Use Stripe CLI for local testing:
 stripe listen --forward-to localhost:5000/api/webhook
 ```
 
-## 📚 Next Steps
+## Next Steps
 
 - [ ] Customize branding and colors
 - [ ] Add your own campaigns
