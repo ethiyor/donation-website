@@ -11,11 +11,10 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>DonateNow</h3>
+              <h3>EthioCare</h3>
             </div>
             <p className="footer-description">
-              A newly launched platform dedicated to making a difference in the world, one donation at a time. 
-              Be part of our journey to create positive change.
+A student-led grassroots initiative dedicated to connecting compassion with action—starting in Ethiopia, with a vision for broader impact across East Africa.
             </p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><FaFacebook /></a>

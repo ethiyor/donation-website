@@ -14,7 +14,7 @@ function Header() {
       <div className="container">
         <nav className="navbar">
           <Link to="/" className="logo" onClick={closeMenu}>
-            <span>DonateNow</span>
+            <span>EthioCare</span>
           </Link>
 
           <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">

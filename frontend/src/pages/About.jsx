@@ -7,7 +7,7 @@ function About() {
       <section className="page-hero">
         <div className="container">
           <h1>About Us</h1>
-          <p>Dedicated to making a positive impact in communities worldwide</p>
+          <p>Dedicated to supporting struggling communities, starting in Ethiopia</p>
         </div>
       </section>
 
@@ -16,14 +16,13 @@ function About() {
           <div className="about-intro">
             <h2>Our Story</h2>
             <p>
-              Newly launched with a vision to connect generous donors with meaningful causes, DonateNow 
-              is on a mission to facilitate positive change across communities. We believe that everyone 
-              has the power to make a difference, regardless of the size of their contribution.
+EthioCare is a newly launched, grassroots, student-led fundraising initiative created to support individuals and families in Ethiopia facing homelessness, displacement, and harsh living conditions—particularly those living in shelters due to political instability in different regions of the country
             </p>
             <p>
-              Our platform is designed to make charitable giving accessible, transparent, and secure. 
-              From disaster relief to education initiatives, healthcare projects to environmental conservation, 
-              we're committed to supporting causes that matter and building a community of changemakers.
+Founded with a vision to connect generous donors, especially students across the United States, with meaningful humanitarian causes, EthioCare is built on the belief that everyone has the power to make a difference, regardless of the size of their contribution.
+            </p>
+            <p>
+              While our current focus is Ethiopia, our long-term goal is to extend this impact across East Africa—supporting communities affected by displacement, poverty, and instability through grassroots action and collective care
             </p>
           </div>
 
@@ -34,8 +33,7 @@ function About() {
               </div>
               <h3>Our Mission</h3>
               <p>
-                To empower individuals and organizations to create lasting positive change through 
-                accessible, transparent, and secure charitable giving.
+                To mobilize students across the United States and compassionate supporters worldwide to provide direct humanitarian support to struggling communities in Ethiopia.
               </p>
             </div>
 
@@ -45,8 +43,7 @@ function About() {
               </div>
               <h3>Our Vision</h3>
               <p>
-                A world where charitable giving is effortless, transparent, and impactful, enabling 
-                everyone to contribute to causes they care about.
+                A future where collective action—no matter how small—creates meaningful relief for people affected by displacement and hardship in Ethiopia, while laying the foundation for broader impact across East Africa.
               </p>
             </div>
 
@@ -67,14 +64,14 @@ function About() {
               </div>
               <h3>Our Commitment</h3>
               <p>
-                100% of your donation goes to your chosen cause. We're committed to maintaining the 
-                highest standards of security and transparency.
+               All donations collected through EthioCare are dedicated to supporting struggling communities in Ethiopia. This is a grassroots fundraising effort, and funds are collected personally and distributed directly or through trusted local channels.
+</p>
+                <p> Donations are not tax-deductible!
               </p>
             </div>
           </div>
 
           <div className="impact-section">
-            <h2>Our Goals</h2>
             <div className="impact-stats">
               <div className="impact-stat">
                 <h3>100%</h3>
@@ -89,7 +86,7 @@ function About() {
                 <p>Campaign Network</p>
               </div>
               <div className="impact-stat">
-                <h3>Global</h3>
+                <h3>Africa</h3>
                 <p>Reach & Impact</p>
               </div>
             </div>
