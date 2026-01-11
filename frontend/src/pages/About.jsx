@@ -16,14 +16,14 @@ function About() {
           <div className="about-intro">
             <h2>Our Story</h2>
             <p>
-              Founded with a vision to connect generous donors with meaningful causes, DonateNow has been 
-              facilitating positive change since our inception. We believe that everyone has the power to 
-              make a difference, regardless of the size of their contribution.
+              Newly launched with a vision to connect generous donors with meaningful causes, DonateNow 
+              is on a mission to facilitate positive change across communities. We believe that everyone 
+              has the power to make a difference, regardless of the size of their contribution.
             </p>
             <p>
-              Through our platform, we've helped thousands of campaigns reach their goals, touching lives 
-              in communities across the globe. From disaster relief to education initiatives, healthcare 
-              projects to environmental conservation, we're proud to support causes that matter.
+              Our platform is designed to make charitable giving accessible, transparent, and secure. 
+              From disaster relief to education initiatives, healthcare projects to environmental conservation, 
+              we're committed to supporting causes that matter and building a community of changemakers.
             </p>
           </div>
 
@@ -74,23 +74,23 @@ function About() {
           </div>
 
           <div className="impact-section">
-            <h2>Our Impact</h2>
+            <h2>Our Goals</h2>
             <div className="impact-stats">
               <div className="impact-stat">
-                <h3>$2.5M+</h3>
-                <p>Total Funds Raised</p>
+                <h3>100%</h3>
+                <p>Secure & Transparent</p>
               </div>
               <div className="impact-stat">
-                <h3>50K+</h3>
-                <p>Donors Worldwide</p>
+                <h3>24/7</h3>
+                <p>Platform Availability</p>
               </div>
               <div className="impact-stat">
-                <h3>500+</h3>
-                <p>Successful Campaigns</p>
+                <h3>Growing</h3>
+                <p>Campaign Network</p>
               </div>
               <div className="impact-stat">
-                <h3>50+</h3>
-                <p>Countries Reached</p>
+                <h3>Global</h3>
+                <p>Reach & Impact</p>
               </div>
             </div>
           </div>

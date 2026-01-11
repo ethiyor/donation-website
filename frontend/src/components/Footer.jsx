@@ -11,12 +11,11 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <FaHeart className="footer-logo-icon" />
               <h3>DonateNow</h3>
             </div>
             <p className="footer-description">
-              Making a difference in the world, one donation at a time. 
-              Join us in our mission to create positive change.
+              A newly launched platform dedicated to making a difference in the world, one donation at a time. 
+              Be part of our journey to create positive change.
             </p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><FaFacebook /></a>

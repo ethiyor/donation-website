@@ -37,11 +37,11 @@ function Home() {
           <div className="hero-content fade-in">
             <h1>Make a Difference Today</h1>
             <p className="hero-subtitle">
-              Your generosity can change lives. Join thousands of donors supporting causes that matter.
+              Your generosity can change lives. Be among the first to support causes that matter.
             </p>
             <div className="hero-actions">
               <Link to="/donate" className="btn btn-primary btn-large">
-                <FaHeart /> Donate Now
+                 Donate Now
               </Link>
               <Link to="/campaigns" className="btn btn-secondary btn-large">
                 Browse Campaigns
@@ -136,7 +136,7 @@ function Home() {
             <div className="step">
               <div className="step-number">3</div>
               <h3>Track Impact</h3>
-              <p>Receive updates and see how your donation is making a difference</p>
+              <p>Follow campaign progress and see how your donation makes a real difference</p>
             </div>
           </div>
         </div>

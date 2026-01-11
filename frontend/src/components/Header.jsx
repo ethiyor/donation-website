@@ -14,7 +14,6 @@ function Header() {
       <div className="container">
         <nav className="navbar">
           <Link to="/" className="logo" onClick={closeMenu}>
-            <FaHeart className="logo-icon" />
             <span>DonateNow</span>
           </Link>
 
