@@ -189,6 +189,105 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Featured Campaigns Grid */
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.featured-campaign-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.campaign-icon-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campaign-icon-large {
+  font-size: 48px;
+  color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  width: 90px;
+  height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.featured-campaign-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.campaign-desc {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.campaign-highlights {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.campaign-highlights h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.campaign-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.campaign-highlights li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.campaign-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 36px;
@@ -206,5 +305,9 @@
 
   .stat-card h3 {
     font-size: 28px;
+  }
+
+  .campaigns-grid {
+    grid-template-columns: 1fr;
   }
 }

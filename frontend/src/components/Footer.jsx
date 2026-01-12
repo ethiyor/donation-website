@@ -49,22 +49,22 @@ A student-led grassroots initiative dedicated to connecting compassion with acti
             <ul className="contact-info">
               <li>
                 <FaEnvelope />
-                <a href="mailto:info@donatenow.com">info@donatenow.com</a>
+                <a href="mailto:ytk2108@columbia.edu">ytk2108@columbia.edu</a>
               </li>
               <li>
                 <FaPhone />
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+13322656980">+1 (332) 265-6980</a>
               </li>
               <li>
                 <FaMapMarkerAlt />
-                <span>123 Charity St, City, Country</span>
+                <span>New York City</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} DonateNow. All rights reserved.</p>
+          <p>&copy; {currentYear} EthioCare. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import Campaigns from './pages/Campaigns'
 import CampaignDetail from './pages/CampaignDetail'
@@ -15,6 +16,7 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Header />
       <main className="main-content">
         <Routes>
