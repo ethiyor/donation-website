@@ -479,24 +479,76 @@
 }
 
 @media (max-width: 768px) {
+  .page-hero {
+    padding: 50px 0 40px;
+  }
+  
   .page-hero h1 {
     font-size: 32px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
   }
 
   .filters {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .filter-btn {
+    font-size: 13px;
+    padding: 8px 16px;
   }
 
   .campaign-detail-card {
-    padding: 25px;
+    padding: 20px;
   }
 
   .campaign-detail-card h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  
+  .campaign-icon {
+    font-size: 36px;
   }
 
   .approach-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .mission-intro {
+    font-size: 16px;
+  }
+  
+  .why-matters-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero-subtitle {
+    font-size: 14px;
+  }
+  
+  .campaign-detail-card {
+    padding: 16px;
+  }
+  
+  .campaign-detail-card h2 {
+    font-size: 20px;
+  }
+  
+  .highlight-box,
+  .info-banner {
+    padding: 16px;
+    font-size: 14px;
   }
 
   .our-approach h2,

@@ -135,3 +135,25 @@
     margin: 10px auto;
   }
 }
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+  
+  .logo-icon {
+    font-size: 24px;
+  }
+  
+  .navbar {
+    padding: 12px 0;
+  }
+  
+  .nav-links {
+    top: 60px;
+  }
+  
+  .nav-links li {
+    padding: 10px 16px;
+  }
+}

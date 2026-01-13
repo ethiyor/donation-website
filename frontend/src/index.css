@@ -243,9 +243,14 @@ body {
     padding-top: 70px;
   }
   
+  .container {
+    padding: 0 16px;
+  }
+  
   .btn {
     padding: 10px 20px;
     font-size: 14px;
+    width: 100%;
   }
   
   .btn-large {
@@ -255,6 +260,35 @@ body {
   
   .card {
     padding: 16px;
+  }
+  
+  .grid {
+    gap: 16px;
+  }
+  
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  .btn {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+  
+  .btn-large {
+    font-size: 15px;
+    padding: 12px 24px;
   }
 }
 

@@ -86,3 +86,21 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-page .page-hero h1 {
+    font-size: 28px;
+  }
+  
+  .contact-form {
+    padding: 16px;
+  }
+  
+  .contact-form h2 {
+    font-size: 22px;
+  }
+  
+  .contact-info-item {
+    padding: 12px;
+  }
+}

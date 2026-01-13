@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 768px) {
+  .about-page .page-hero {
+    padding: 50px 0 40px;
+  }
+  
   .about-intro h2,
   .impact-section h2 {
     font-size: 28px;
@@ -105,5 +109,28 @@
 
   .impact-stat h3 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .page-hero h1 {
+    font-size: 28px;
+  }
+  
+  .about-intro h2,
+  .impact-section h2 {
+    font-size: 24px;
+  }
+  
+  .about-intro p {
+    font-size: 14px;
+  }
+  
+  .impact-stat h3 {
+    font-size: 28px;
+  }
+  
+  .impact-stat p {
+    font-size: 14px;
   }
 }

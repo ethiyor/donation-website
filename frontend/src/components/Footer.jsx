@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { FaHeart, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 import './Footer.css'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const [showModal, setShowModal] = useState(false)
+
+  const handleSocialClick = (e) => {
+    e.preventDefault()
+    setShowModal(true)
+  }
 
   return (
     <footer className="footer">
@@ -14,13 +21,12 @@ function Footer() {
               <h3>EthioCare</h3>
             </div>
             <p className="footer-description">
-A student-led grassroots initiative dedicated to connecting compassion with action—starting in Ethiopia, with a vision for broader impact across East Africa.
-            </p>
+            A student-led grassroots initiative led by Ethiopian and Eritrean students across universities in the United States, dedicated to turning compassion into action, beginning in Ethiopia, with a broader vision for impact across East Africa.</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><FaFacebook /></a>
-              <a href="#" aria-label="Twitter"><FaTwitter /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram /></a>
-              <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
+              <a href="#" aria-label="Facebook" onClick={handleSocialClick}><FaFacebook /></a>
+              <a href="#" aria-label="Twitter" onClick={handleSocialClick}><FaTwitter /></a>
+              <a href="#" aria-label="Instagram" onClick={handleSocialClick}><FaInstagram /></a>
+              <a href="#" aria-label="LinkedIn" onClick={handleSocialClick}><FaLinkedin /></a>
             </div>
           </div>
 
@@ -38,9 +44,9 @@ A student-led grassroots initiative dedicated to connecting compassion with acti
             <h4>Support</h4>
             <ul>
               <li><Link to="/donate">Make a Donation</Link></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><Link to="/faq">FAQ</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service">Terms of Service</Link></li>
             </ul>
           </div>
 
@@ -67,6 +73,17 @@ A student-led grassroots initiative dedicated to connecting compassion with acti
           <p>&copy; {currentYear} EthioCare. All rights reserved.</p>
         </div>
       </div>
+
+      {showModal && (
+        <div className="social-modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="social-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
+            <h3>Coming Soon!</h3>
+            <p>Our social media profiles will be included soon. Stay tuned for updates!</p>
+            <button className="btn btn-primary" onClick={() => setShowModal(false)}>Got It</button>
+          </div>
+        </div>
+      )}
     </footer>
   )
 }
