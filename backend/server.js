@@ -30,6 +30,7 @@ app.use('/api/donations', require('./routes/donations'));
 app.use('/api/campaigns', require('./routes/campaigns'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/stats', require('./routes/stats'));
+app.use('/api/contact', require('./routes/contact'));
 
 // Health check
 app.get('/api/health', (req, res) => {
