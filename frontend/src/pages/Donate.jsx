@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { FaDollarSign, FaQrcode } from 'react-icons/fa'
+import { FaDollarSign, FaQrcode, FaMobileAlt } from 'react-icons/fa'
 import { toast } from 'react-toastify'
 import { donationAPI } from '../utils/api'
 import paypalQR from './images/paypal.png'
@@ -19,8 +19,7 @@ function Donate() {
     { id: 'paypal', name: 'PayPal', icon: FaQrcode, qr: paypalQR },
     { id: 'venmo', name: 'Venmo', icon: FaQrcode, qr: venmoQR },
     { id: 'zelle', name: 'Zelle', icon: FaQrcode, qr: zelleQR },
-    // Uncomment below after adding telebirr.png to images folder
-    // { id: 'telebirr', name: 'TeleBirr', icon: FaQrcode, qr: telebirrQR }
+    { id: 'telebirr', name: 'TeleBirr', icon: FaMobileAlt, qr: null }
   ]
 
   useEffect(() => {
@@ -104,7 +103,7 @@ function Donate() {
               <h3>Need Help?</h3>
               <p>
                 If you have any questions about donating, please contact us at{' '}
-                <a href="mailto:support@donatenow.com">support@donatenow.com</a>
+                <a href="mailto:ytk2108@columbia.edu">ytk2108@columbia.edu</a>
               </p>
             </div>
           </div>
@@ -116,22 +115,43 @@ function Donate() {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
             <h3>{paymentMethod.charAt(0).toUpperCase() + paymentMethod.slice(1)} Payment</h3>
-            <div className="qr-code-section">
-              <p className="qr-notice">
-                Scan the QR code with your {paymentMethod.charAt(0).toUpperCase() + paymentMethod.slice(1)} app:
-              </p>
-              <div className="qr-code-container">
-                <img 
-                  src={paymentMethods.find(m => m.id === paymentMethod)?.qr} 
-                  alt={`${paymentMethod} QR Code`}
-                  className="qr-code-image"
-                />
+            
+            {paymentMethod === 'telebirr' ? (
+              <div className="telebirr-section">
+                <div className="telebirr-icon">
+                  <FaMobileAlt />
+                </div>
+                <p className="telebirr-notice">
+                  To donate using TeleBirr in Ethiopian Birr:
+                </p>
+                <div className="telebirr-number">
+                  <strong>+251 9XXXXXXXX</strong>
+                </div>
+                <p className="telebirr-instructions">
+                  1. Open your TeleBirr app<br/>
+                  2. Send money to the number above<br/>
+                  3. Include your name in the note/reference<br/>
+                  4. Email your receipt to <a href="mailto:ytk2108@columbia.edu">ytk2108@columbia.edu</a>
+                </p>
               </div>
-              <p className="qr-instructions">
-                After completing the payment, please email your receipt to{' '}
-                <a href="mailto:donations@donatenow.com">donations@donatenow.com</a>
-              </p>
-            </div>
+            ) : (
+              <div className="qr-code-section">
+                <p className="qr-notice">
+                  Scan the QR code with your {paymentMethod.charAt(0).toUpperCase() + paymentMethod.slice(1)} app:
+                </p>
+                <div className="qr-code-container">
+                  <img 
+                    src={paymentMethods.find(m => m.id === paymentMethod)?.qr} 
+                    alt={`${paymentMethod} QR Code`}
+                    className="qr-code-image"
+                  />
+                </div>
+                <p className="qr-instructions">
+                  After completing the payment, please email your receipt to{' '}
+                  <a href="mailto:ytk2108@columbia.edu">ytk2108@columbia.edu</a>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       )}

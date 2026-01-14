@@ -21,7 +21,7 @@ function Footer() {
               <h3>EthioCare</h3>
             </div>
             <p className="footer-description">
-            A student-led grassroots initiative led by Ethiopian and Eritrean students across universities in the United States, dedicated to turning compassion into action, beginning in Ethiopia, with a broader vision for impact across East Africa.</p>
+            A student-led grassroots initiative founded by Ethiopian and Eritrean students across universities in the United States, dedicated to turning compassion into action, beginning in Ethiopia, with a broader vision for impact across East Africa</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook" onClick={handleSocialClick}><FaFacebook /></a>
               <a href="#" aria-label="Twitter" onClick={handleSocialClick}><FaTwitter /></a>

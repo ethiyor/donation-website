@@ -154,12 +154,6 @@ function Home() {
               )
             })}
           </div>
-
-          <div className="view-all">
-            <Link to="/campaigns" className="btn btn-secondary">
-              View All Campaign Details
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -176,12 +170,32 @@ function Home() {
             <div className="step">
               <div className="step-number">2</div>
               <h3>Make a Donation</h3>
-              <p>Contribute any amount securely through our encrypted payment system</p>
+              <p>Your donation directly supports communities facing displacement and crisis.</p>
             </div>
             <div className="step">
               <div className="step-number">3</div>
               <h3>Track Impact</h3>
               <p>Follow campaign progress and see how your donation makes a real difference</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Transparency & Accountability */}
+      <section className="transparency-section">
+        <div className="container">
+          <div className="transparency-content">
+            <h2>Transparency & Accountability</h2>
+            <p className="transparency-intro">
+              EthioCare is a student-led initiative committed to transparency and responsible stewardship of every contribution we receive.
+            </p>
+            <div className="transparency-details">
+              <p>
+                All donations are directed toward on-the-ground humanitarian aid through trusted local networks and verified contacts. We maintain rigorous oversight to ensure that every dollar reaches those who need it most.
+              </p>
+              <p>
+                We provide regular updates and comprehensive impact summaries to our donors, ensuring complete accountability and visibility into how your contributions are making a tangible difference in communities across Ethiopia.
+              </p>
             </div>
           </div>
         </div>

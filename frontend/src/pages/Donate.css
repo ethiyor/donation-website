@@ -268,6 +268,72 @@
   text-decoration: underline;
 }
 
+/* TeleBirr Section */
+.telebirr-section {
+  margin-top: 24px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.telebirr-icon {
+  font-size: 60px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.telebirr-notice {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.telebirr-number {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 24px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.telebirr-number strong {
+  font-size: 24px;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.telebirr-instructions {
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 2;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.telebirr-instructions a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.telebirr-instructions a:hover {
+  text-decoration: underline;
+}
+
 /* Modal Styles */
 .modal-overlay {
   position: fixed;
