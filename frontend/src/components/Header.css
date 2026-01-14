@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: white;
+  background: var(--bg-primary);
   box-shadow: var(--shadow-md);
   z-index: 1000;
 }
@@ -98,21 +98,20 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--bg-primary);
     flex-direction: column;
     gap: 0;
     padding: 20px 0;
     box-shadow: var(--shadow-lg);
-    transform: translateY(-100%);
+    max-height: 0;
+    overflow: hidden;
     opacity: 0;
-    visibility: hidden;
     transition: all 0.3s ease;
   }
 
   .nav-links.active {
-    transform: translateY(0);
+    max-height: 500px;
     opacity: 1;
-    visibility: visible;
   }
 
   .nav-links li {

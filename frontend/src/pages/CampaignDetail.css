@@ -110,7 +110,7 @@
 }
 
 .donation-item:hover {
-  background: white;
+  background: var(--card-bg);
   box-shadow: var(--shadow-md);
 }
 

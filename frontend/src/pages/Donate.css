@@ -3,10 +3,14 @@
   grid-template-columns: 1fr 350px;
   gap: 40px;
   padding: 60px 0;
+  background: var(--bg-primary);
 }
 
 .donate-form {
   padding: 40px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
 }
 
 .selected-campaign {
@@ -60,7 +64,7 @@
 .amount-btn {
   padding: 16px;
   border: 2px solid var(--border-color);
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   font-size: 20px;
   font-weight: 700;
@@ -130,6 +134,9 @@
 .info-box {
   padding: 24px;
   margin-bottom: 24px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
 }
 
 .info-box h3 {
@@ -231,7 +238,7 @@
   align-items: center;
   gap: 16px;
   padding: 20px;
-  background: white;
+  background: #ffffff;
   border-radius: var(--border-radius);
   margin: 20px 0;
 }
@@ -301,11 +308,12 @@
 }
 
 .telebirr-number {
-  background: white;
+  background: var(--card-bg);
   padding: 20px;
   border-radius: 12px;
   margin: 24px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--border-color);
 }
 
 .telebirr-number strong {
@@ -316,12 +324,13 @@
 
 .telebirr-instructions {
   text-align: left;
-  background: white;
+  background: var(--card-bg);
   padding: 20px;
   border-radius: 10px;
   line-height: 2;
   color: var(--text-secondary);
   font-size: 14px;
+  border: 2px solid var(--border-color);
 }
 
 .telebirr-instructions a {
@@ -350,7 +359,7 @@
 }
 
 .modal-content {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 40px;
   max-width: 500px;

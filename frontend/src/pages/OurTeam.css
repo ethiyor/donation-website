@@ -257,7 +257,7 @@
 }
 
 .join-content .btn {
-  background: white;
+  background: var(--bg-primary);
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -323,8 +323,7 @@
 
 /* Animation */
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 0.6s ease-out forwards;
+  animation: fadeIn 0.6s ease-out;
 }
 
 .team-card:nth-child(1) { animation-delay: 0.1s; }

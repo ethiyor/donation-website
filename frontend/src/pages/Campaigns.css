@@ -85,7 +85,7 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
   padding: 20px;
-  background: white;
+  background: var(--card-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
 }
@@ -98,7 +98,8 @@
 .filters button {
   padding: 10px 20px;
   border: 2px solid var(--border-color);
-  background: white;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -145,7 +146,7 @@
   text-align: center;
   position: relative;
   padding: 30px;
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
@@ -161,11 +162,11 @@
 /* Campaign Detail Cards */
 .campaign-details {
   padding: 40px 0;
-  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+  background: var(--bg-secondary);
 }
 
 .campaign-detail-card {
-  background: white;
+  background: var(--card-bg);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
@@ -336,7 +337,7 @@
 /* Our Approach Section */
 .our-approach {
   padding: 50px 0;
-  background: white;
+  background: var(--bg-primary);
 }
 
 .our-approach h2 {
@@ -368,7 +369,7 @@
 
 .approach-item {
   padding: 28px 24px;
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   border: 2px solid rgba(102, 126, 234, 0.1);
   transition: all 0.3s ease;

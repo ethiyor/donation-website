@@ -19,11 +19,11 @@
 .privacy-content,
 .terms-content {
   padding: 60px 0 80px;
-  background: #f9fafb;
+  background: var(--bg-secondary);
 }
 
 .content-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 50px;
   box-shadow: var(--shadow-md);

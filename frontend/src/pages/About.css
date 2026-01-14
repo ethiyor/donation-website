@@ -1,5 +1,6 @@
 .about-content {
   padding: 60px 0;
+  background: var(--bg-primary);
 }
 
 .about-intro {
@@ -31,6 +32,9 @@
 .value-card {
   text-align: center;
   padding: 40px 24px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
 

@@ -112,7 +112,7 @@
 
 .how-it-works {
   padding: 50px 0;
-  background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+  background: var(--bg-secondary);
   text-align: center;
 }
 
@@ -242,8 +242,9 @@
 }
 
 .cta-section .btn {
-  background: white;
+  background: var(--bg-primary);
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 .cta-section .btn:hover {
@@ -387,5 +388,21 @@
 
   .transparency-details p {
     font-size: 15px;
+  }
+}
+
+/* Remove fade-in initial opacity to prevent invisible content */
+.fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
