@@ -31,7 +31,7 @@
 
 .stats-section {
   padding: 40px 0;
-  background: white;
+  background: var(--bg-primary);
   margin-top: -40px;
   position: relative;
   z-index: 10;
@@ -164,7 +164,7 @@
 /* Transparency & Accountability Section */
 .transparency-section {
   padding: 50px 0;
-  background: white;
+  background: var(--bg-primary);
 }
 
 .transparency-content {
@@ -260,7 +260,7 @@
 }
 
 .featured-campaign-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 24px;
   box-shadow: var(--shadow-md);

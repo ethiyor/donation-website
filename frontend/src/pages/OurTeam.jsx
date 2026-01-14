@@ -58,7 +58,7 @@ function OurTeam() {
             <p>
               EthioCare is a student-led grassroots initiative founded and led by Ethiopian and Eritrean students 
               across universities in the United States. Our team works collaboratively to coordinate humanitarian support, 
-              mobilize resources, and ensure responsible, transparent aid delivery to communities in need—beginning in 
+              mobilize resources, and ensure responsible, transparent aid delivery to communities in need, beginning in 
               Ethiopia, with a broader vision for impact across East Africa.
             </p>
           </div>

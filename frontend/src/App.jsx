@@ -11,6 +11,7 @@ import Donate from './pages/Donate'
 import Success from './pages/Success'
 import Cancel from './pages/Cancel'
 import About from './pages/About'
+import OurTeam from './pages/OurTeam'
 import Contact from './pages/Contact'
 import FAQ from './pages/FAQ'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -31,6 +32,7 @@ function App() {
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
           <Route path="/about" element={<About />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

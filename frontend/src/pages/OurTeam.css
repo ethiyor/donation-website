@@ -9,7 +9,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 30px;
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -54,7 +54,7 @@
 /* Leadership Section */
 .leadership-section {
   padding: 50px 0;
-  background: white;
+  background: var(--bg-primary);
 }
 
 .team-grid {
@@ -64,7 +64,7 @@
 }
 
 .team-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -142,7 +142,7 @@
 /* Core Team Section */
 .core-team-section {
   padding: 50px 0;
-  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+  background: var(--bg-secondary);
 }
 
 .core-team-grid {
@@ -154,7 +154,7 @@
 }
 
 .core-team-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -192,7 +192,7 @@
 /* Network Section */
 .network-section {
   padding: 50px 0;
-  background: white;
+  background: var(--bg-primary);
 }
 
 .network-content {
