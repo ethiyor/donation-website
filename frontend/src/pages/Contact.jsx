@@ -23,12 +23,29 @@ function Contact() {
     e.preventDefault()
     setSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Thank you! Your message has been sent successfully.')
-      setFormData({ name: '', email: '', subject: '', message: '' })
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        toast.success('Thank you! Your message has been sent successfully.')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        toast.error(data.error || 'Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error sending message:', error)
+      toast.error('Failed to send message. Please email us directly at ytk2108@columbia.edu')
+    } finally {
       setSubmitting(false)
-    }, 1500)
+    }
   }
 
   return (
@@ -56,8 +73,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3>Email Us</h3>
-                  <a href="mailto:info@donatenow.com">info@donatenow.com</a>
-                  <a href="mailto:support@donatenow.com">support@donatenow.com</a>
+                  <a href="mailto:ytk2108@columbia.edu">ytk2108@columbia.edu</a>
                 </div>
               </div>
 
@@ -67,8 +83,8 @@ function Contact() {
                 </div>
                 <div>
                   <h3>Call Us</h3>
-                  <a href="tel:+1234567890">+1 (234) 567-890</a>
-                  <p>Mon-Fri: 9AM - 6PM EST</p>
+                  <a href="tel:+13322656980">+1 (332) 265-6980</a>
+                  <a href="tell+14843267162">+1 (484) 326-7162</a>
                 </div>
               </div>
 
@@ -78,8 +94,8 @@ function Contact() {
                 </div>
                 <div>
                   <h3>Visit Us</h3>
-                  <p>123 Charity Street</p>
-                  <p>New York, NY 10001</p>
+                  <p>615 West 115th Street</p>
+                  <p>New York, NY 10027</p>
                 </div>
               </div>
             </div>
