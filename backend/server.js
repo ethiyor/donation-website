@@ -18,6 +18,17 @@ app.use(cors({
   credentials: true
 }));
 
+// Redirect from old Render URL to ethiocare.org
+app.use((req, res, next) => {
+  const host = req.get('host');
+  // Check if the request is from the old Render URL
+  if (host && host === 'donation-website-rcvb.onrender.com') {
+    const newUrl = `https://ethiocare.org${req.originalUrl}`;
+    return res.redirect(301, newUrl);
+  }
+  next();
+});
+
 // Stripe webhook route needs raw body
 app.post('/api/webhook', express.raw({ type: 'application/json' }), require('./routes/webhook'));
 
