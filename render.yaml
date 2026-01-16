@@ -1,0 +1,32 @@
+services:
+  # Frontend Static Site
+  - type: web
+    name: ethiocare-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+    # Redirect old URL to new domain
+    redirects:
+      - source: https://donation-website-rcvb.onrender.com/*
+        destination: https://ethiocare.org/:splat
+        type: permanent
+
+  # Backend API
+  - type: web
+    name: ethiocare-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
