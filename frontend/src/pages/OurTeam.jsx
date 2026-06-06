@@ -10,18 +10,19 @@ function OurTeam() {
       university: 'Swarthmore University',
       description: 'Natnael oversees EthioCare\'s strategic direction, partnerships, and overall coordination, helping guide the organization\'s mission and long-term vision.'
     },
+     {
+      name: 'Yordanos Tiruneh',
+      role: 'Co-Founder & Coordinator',
+      university: 'Columbia University',
+      description: 'Yordanos contributes to organizational coordination, communications, and technical development, helping align EthioCare\'s mission with effective implementation.'
+    },
     {
       name: 'Eyuael Simeneh',
       role: 'Coordinator',
       university: 'Stanford University',
       description: 'Eyuael supports coordination efforts, outreach, and operational planning to strengthen EthioCare\'s impact and community engagement.'
     },
-    {
-      name: 'Yordanos Tiruneh',
-      role: 'Coordinator',
-      university: 'Columbia University',
-      description: 'Yordanos contributes to organizational coordination, communications, and technical development, helping align EthioCare\'s mission with effective implementation.'
-    },
+   
     {
       name: 'Tesfalem Hussein',
       role: 'Coordinator',
